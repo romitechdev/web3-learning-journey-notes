@@ -1,35 +1,35 @@
-# 📘 Progress Belajar Web3 - Hari 1
+# 📘 Web3 Learning Progress - Day 1
 
-## 🧠 Materi yang Dipelajari
+## 🧠 Material Learned
 
-- **Web3** adalah konsep internet generasi berikutnya yang terdesentralisasi.
-- Data dan kontrol tidak dikuasai oleh satu pihak (seperti perusahaan besar), melainkan tersebar di jaringan pengguna.
-- Salah satu teknologi inti Web3 adalah **Blockchain**, yaitu sistem pencatatan data transaksi secara aman, transparan, dan tidak dapat diubah sembarangan.
-- Blockchain menyimpan data di banyak komputer (node), sehingga memastikan keamanan dan ketahanan jaringan.
+- **Web3** is the concept of the next generation of the internet that is decentralized.
+- Data and control are not dominated by a single party (such as large corporations), but are distributed across the user network.
+- One of the core technologies of Web3 is **Blockchain**, a system for recording transaction data securely, transparently, and immutably.
+- Blockchain stores data on many computers (nodes), ensuring network security and resilience.
 
-## 💻 Praktik Hari Ini
+## 💻 Today's Practice
 
-### Mencoba Demo Blockchain
-Saya mencoba mengunjungi [Blockchain Demo](https://blockchaindemo.io/) untuk simulasi visual blockchain.
+### Trying Out a Blockchain Demo
+I tried visiting [Blockchain Demo](https://blockchaindemo.io/) for a visual blockchain simulation.
 
-## 📜 Smart Contract Pertama: Mesin Kopi Digital
+## 📜 First Smart Contract: A Digital Coffee Machine
 
-### 🧩 Konsep Dasar
+### 🧩 Basic Concept
 
-Saya mulai dengan membuat analogi sederhana: **mesin kopi digital berbasis smart contract**. Konsep ini membantu memahami bagaimana logika bisnis bisa diotomatisasi di atas blockchain.
+I started by creating a simple analogy: **a smart contract-based digital coffee machine**. This concept helps understand how business logic can be automated on top of a blockchain.
 
-### 💡 Cara Kerja:
-- Pengguna mengirim sejumlah ether sebagai pembayaran.
-- Jika nilai yang dikirim sesuai atau melebihi harga kopi (misalnya `1 ether`), maka kopi "dikeluarkan" (simulasi lewat event atau token).
-- Jika nilai kurang dari yang dibutuhkan, smart contract memicu error dan tidak memproses transaksi.
-- Uang otomatis dikembalikan jika kondisi tidak terpenuhi.
+### 💡 How It Works:
+- A user sends a certain amount of ether as payment.
+- If the amount sent matches or exceeds the price of the coffee (e.g., `1 ether`), then the coffee is "dispensed" (simulated via an event or token).
+- If the amount is less than required, the smart contract triggers an error and does not process the transaction.
+- The money is automatically refunded if the condition is not met.
 
 
 
-### 🔗 Link untuk Mencoba:
-👉 [Coba di Remix Ethereum IDE](https://remix.ethereum.org/)
+### 🔗 Link to Try It Out:
+👉 [Try it on Remix Ethereum IDE](https://remix.ethereum.org/)
 
-### 🧑‍💻 Contoh Kode Solidity Lengkap:
+### 🧑‍💻 Complete Solidity Code Example:
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -52,45 +52,44 @@ contract CoffeeMachine {
 }
 ```
 
-Berikut adalah tampilan smart contract di Remix IDE:
+Here is how the smart contract looks in Remix IDE:
 
-![Smart Contract Mesin Kopi](day1/coffee-contract.png)
-
----
-
-
-
-# 📘 Progress Belajar Web3 - Hari 2
-
-## 🧠 Materi yang Dipelajari
-- Membuat token ERC-20 sederhana menggunakan Solidity.
-- Mengenal konsep `totalSupply`, `balanceOf`, `transfer`, dan event `Transfer`.
-- Simulasi deploy dan penggunaan smart contract di [Remix IDE](https://remix.ethereum.org/).
+![Smart Contract Coffee Machine](day1/coffee-contract.png)
 
 ---
 
-## 🚀 Proyek KentangCoin 🥔
 
-### 💡 Deskripsi
-Hari ini saya membuat token bernama **KentangCoin (KENTANG)** berbasis standar **ERC-20** di jaringan Ethereum. Token ini memiliki fitur dasar:
-- Total supply awal: **1.000.000 KENTANG**
-- Fungsi transfer antar wallet
-- Event log setiap kali terjadi transfer
+# 📘 Web3 Learning Progress - Day 2
+
+## 🧠 Material Learned
+- Created a simple ERC-20 token using Solidity.
+- Learned the concepts of `totalSupply`, `balanceOf`, `transfer`, and the `Transfer` event.
+- Simulated deploying and using the smart contract on [Remix IDE](https://remix.ethereum.org/).
 
 ---
 
-## 📄 Langkah-Langkah Simulasi di Remix IDE
+## 🚀 KentangCoin Project 🥔
 
-### 1. Buka Remix IDE
-👉 Akses: [https://remix.ethereum.org/](https://remix.ethereum.org/)
+### 💡 Description
+Today I created a token named **KentangCoin (KENTANG)** based on the **ERC-20** standard on the Ethereum network. This token has basic features:
+- Initial total supply: **1,000,000 KENTANG**
+- Wallet-to-wallet transfer function
+- Event log every time a transfer occurs
 
-### 2. Buat File Baru
-- Klik ikon **File Explorer** di sebelah kiri.
-- Klik tombol **+** untuk membuat file baru.
-- Nama file: `KentangCoin.sol`
+---
 
-### 3. Salin Kode Smart Contract
-Salin kode berikut ke dalam file `KentangCoin.sol`:
+## 📄 Simulation Steps in Remix IDE
+
+### 1. Open Remix IDE
+👉 Access: [https://remix.ethereum.org/](https://remix.ethereum.org/)
+
+### 2. Create a New File
+- Click the **File Explorer** icon on the left.
+- Click the **+** button to create a new file.
+- File name: `KentangCoin.sol`
+
+### 3. Copy the Smart Contract Code
+Copy the following code into the `KentangCoin.sol` file:
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -133,45 +132,45 @@ contract KentangCoin is IERC20 {
 }
 ```
 
-### 4. Compile Smart Contract
-- Pilih tab **Solidity Compiler** di panel kiri.
-- Klik **Compile KentangCoin.sol**.
-- Pastikan tidak ada error.
+### 4. Compile the Smart Contract
+- Select the **Solidity Compiler** tab in the left panel.
+- Click **Compile KentangCoin.sol**.
+- Make sure there are no errors.
 
-### 5. Deploy Smart Contract
-- Pilih tab **Deploy & Run Transactions**.
-- Di bagian **Environment**, pilih **JavaScript VM** (simulasi lokal).
-- Klik **Deploy**.
+### 5. Deploy the Smart Contract
+- Select the **Deploy & Run Transactions** tab.
+- In the **Environment** section, select **JavaScript VM** (local simulation).
+- Click **Deploy**.
 
-> Setelah deploy berhasil, kontrak akan otomatis memberikan semua token (1.000.000 KENTANG) ke akun pertama.
+> After a successful deployment, the contract will automatically assign all tokens (1,000,000 KENTANG) to the first account.
 
-### 6. Cek Saldo Akun
-- Di bawah bagian **Deployed Contracts**, klik tombol **balanceOf**.
-- Masukkan alamat akun deployer (misalnya: `0x5AEDA56215b84a05ff784d9e7f3af3E3c3fd9cf7`) → klik **call**.
-- Harus muncul nilai besar seperti `1000000000000000000000000`.
+### 6. Check the Account Balance
+- Under the **Deployed Contracts** section, click the **balanceOf** button.
+- Enter the deployer account address (e.g., `0x5AEDA56215b84a05ff784d9e7f3af3E3c3fd9cf7`) → click **call**.
+- A large value like `1000000000000000000000000` should appear.
 
-### 7. Uji Fungsi Transfer
-- Klik tombol **transfer**.
-- Masukkan:
-  - `_to`: alamat tujuan (misalnya: `0xAbc...`)
-  - `_amount`: jumlah token yang ingin dikirim (misalnya: `1000000000000000000000` = 1.000 KENTANG)
-- Klik **transact**
+### 7. Test the Transfer Function
+- Click the **transfer** button.
+- Enter:
+  - `_to`: destination address (e.g., `0xAbc...`)
+  - `_amount`: number of tokens to send (e.g., `1000000000000000000000` = 1,000 KENTANG)
+- Click **transact**
 
-> Jika berhasil, kamu bisa lihat event `Transfer` muncul di konsol Remix.
+> If successful, you can see the `Transfer` event appear in the Remix console.
 
-### 8. Periksa Saldo Tujuan
-- Gunakan fungsi `balanceOf` lagi untuk alamat tujuan.
-- Harus muncul saldo bertambah sesuai jumlah yang ditransfer.
-
----
-
-## 🖼️ Screenshot Hasil Deploy
-
-![Hasil Deploy KentangCoin di Remix](day2/kentangcoin.png)
+### 8. Check the Destination Balance
+- Use the `balanceOf` function again for the destination address.
+- The balance should have increased by the amount transferred.
 
 ---
 
-## 📌 Catatan Penting
-- Saat ini, token hanya bisa ditransfer oleh pemilik.
-- Fungsi approval (`approve`, `allowance`) belum tersedia — akan dibuat di hari berikutnya.
-- Untuk saat ini, semua token didistribusikan ke akun deployer via constructor.
+## 🖼️ Screenshot of Deployment Results
+
+![KentangCoin Deployment Result on Remix](day2/kentangcoin.png)
+
+---
+
+## 📌 Important Notes
+- Currently, tokens can only be transferred by the owner.
+- Approval functions (`approve`, `allowance`) are not yet available — they will be created on subsequent days.
+- For now, all tokens are distributed to the deployer account via the constructor.
